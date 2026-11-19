@@ -64,6 +64,35 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:#123339 !impor
 .hide-sm{display:none !important}
 .mob-bar{display:flex}
 }
+@keyframes heroIn{from{opacity:0;translate:0 28px}to{opacity:1;translate:0 0}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes revealUp{from{opacity:0;translate:0 40px}to{opacity:1;translate:0 0}}
+@keyframes clipUp{from{clip-path:inset(18% 0 0 0 round 24px);opacity:.4}to{clip-path:inset(0 0 0 0 round 24px);opacity:1}}
+@keyframes lineGrow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.hero-video{animation:fadeIn 1.6s ease-out both}
+header{animation:fadeIn .9s ease-out both}
+#top>div>*,#top>aside{animation:heroIn .9s cubic-bezier(.22,1,.36,1) both}
+#top>div>*:nth-child(1){animation-delay:.1s}
+#top>div>*:nth-child(2){animation-delay:.2s}
+#top>div>*:nth-child(3){animation-delay:.35s}
+#top>div>*:nth-child(4){animation-delay:.5s}
+#top>div>*:nth-child(5){animation-delay:.62s}
+#top>aside{animation-delay:.45s}
+.btn svg{transition:transform .35s cubic-bezier(.22,1,.36,1)}
+.btn:hover svg{transform:translateX(-5px)}
+@supports (animation-timeline:view()){
+section h2,section h2+p,.card,.stats>div,.steps>li,section[aria-labelledby="sectors-title"] li,#products li,#faq .wrap>div,#quote .wrap>div,footer .wrap>div>*{animation:revealUp linear both;animation-timeline:view();animation-range:entry 0% entry 55%}
+.gallery>figure{animation:clipUp linear both;animation-timeline:view();animation-range:entry 0% entry 60%}
+.steps>li:nth-child(2),.stats>div:nth-child(2),#products li:nth-child(2n){animation-range:entry 6% entry 61%}
+.steps>li:nth-child(3),.stats>div:nth-child(3),#products li:nth-child(3n){animation-range:entry 12% entry 67%}
+.steps>li:nth-child(4){animation-range:entry 18% entry 73%}
+.steps>li:nth-child(5){animation-range:entry 24% entry 79%}
+.steps>li:nth-child(6){animation-range:entry 30% entry 85%}
+.steps>li:nth-child(7){animation-range:entry 36% entry 91%}
+}
+@media (prefers-reduced-motion:reduce){
+*,*::before,*::after{animation:none !important;transition:none !important}
+}
 @media (prefers-reduced-motion:reduce){
 .water,.marquee{animation:none}
 .hero-video{display:none}
@@ -540,6 +569,12 @@ var v=document.querySelector('.hero-video');
 if(v){v.muted=true;v.defaultPlaybackRate=.75;v.playbackRate=.75;
 if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){v.pause();}else{var p=v.play();if(p&&p.catch)p.catch(function(){});}
 if('IntersectionObserver' in window){new IntersectionObserver(function(e){if(e[0].isIntersecting){v.play().catch(function(){});}else{v.pause();}}).observe(v);}}
+var nums=document.querySelectorAll('.stats>div>p:first-child');
+if('IntersectionObserver' in window&&!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)){
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;io.unobserve(e.target);var el=e.target,end=parseInt(el.textContent,10),t0=null;
+function step(ts){if(!t0)t0=ts;var k=Math.min((ts-t0)/1400,1);k=1-Math.pow(1-k,3);el.textContent=Math.round(end*k);if(k<1)requestAnimationFrame(step);}
+el.textContent='0';requestAnimationFrame(step);});},{threshold:.6});
+nums.forEach(function(n){io.observe(n);});}
 var menu=document.getElementById('mobile-menu');
 document.querySelectorAll('[data-menu]').forEach(function(el){el.addEventListener('click',function(){menu.hidden=!menu.hidden;});});
 document.querySelectorAll('.faq-q').forEach(function(btn){btn.addEventListener('click',function(){
