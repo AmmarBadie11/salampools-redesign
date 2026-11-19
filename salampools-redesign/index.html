@@ -22,16 +22,16 @@ a{color:#123339}a:hover{color:#0B2226}
 .nav-links{display:flex}
 .nav-burger{display:none}
 .mob-bar{display:none}
-.water{background-color:#0B2226;background-image:radial-gradient(120% 80% at 80% 10%,rgba(79,201,196,.35) 0%,rgba(18,51,57,0) 55%),radial-gradient(90% 70% at 10% 90%,rgba(38,140,150,.45) 0%,rgba(11,34,38,0) 60%),repeating-radial-gradient(circle at 30% 40%,rgba(255,255,255,.035) 0 2px,rgba(255,255,255,0) 2px 26px),linear-gradient(160deg,#164049 0%,#0B2226 70%);background-size:100% 100%,100% 100%,260px 260px,100% 100%;animation:drift 22s linear infinite}
+.water{background-color:#0B2226;background-image:radial-gradient(120% 80% at 80% 10%,rgba(79,201,196,.35) 0%,rgba(18,51,57,0) 55%),radial-gradient(90% 70% at 10% 90%,rgba(38,140,150,.45) 0%,rgba(11,34,38,0) 60%),repeating-radial-gradient(circle at 30% 40%,rgba(255,255,255,.035) 0 2px,rgba(255,255,255,0) 2px 26px),linear-gradient(160deg,#164049 0%,#0B2226 70%);background-size:100% 100%,100% 100%,260px 260px,100% 100%}
 @keyframes drift{from{background-position:0 0,0 0,0 0,0 0}to{background-position:0 0,0 0,260px 130px,0 0}}
 .ph{background-image:radial-gradient(80% 70% at 70% 20%,rgba(140,226,222,.55) 0%,rgba(140,226,222,0) 60%),repeating-radial-gradient(circle at 40% 60%,rgba(255,255,255,.07) 0 2px,rgba(255,255,255,0) 2px 22px),linear-gradient(150deg,#2B8C94 0%,#123339 85%)}
 .ph-night{background-image:radial-gradient(60% 50% at 50% 70%,rgba(79,201,196,.7) 0%,rgba(79,201,196,0) 70%),repeating-radial-gradient(circle at 50% 50%,rgba(255,255,255,.06) 0 2px,rgba(255,255,255,0) 2px 20px),linear-gradient(180deg,#06161A 0%,#0F3A40 100%)}
 .ph-sand{background-image:radial-gradient(70% 60% at 30% 30%,rgba(255,255,255,.5) 0%,rgba(255,255,255,0) 60%),linear-gradient(140deg,#7FD0CB 0%,#3E9EA3 55%,#D9CFBD 55.2%,#E9E2D5 100%)}
 .hero{position:relative;background-color:#0B2226;background-image:url(assets/hero-poster.jpg);background-size:cover;background-position:center;overflow:hidden;isolation:isolate}
-.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;filter:blur(1.5px) saturate(.85);transform:scale(1.06)}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;}
 .hero-veil{position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(270deg,rgba(7,26,29,.88) 0%,rgba(7,26,29,.62) 45%,rgba(11,34,38,.45) 100%),linear-gradient(180deg,rgba(7,26,29,.55) 0%,rgba(7,26,29,0) 30%,rgba(7,26,29,0) 65%,rgba(11,34,38,.95) 100%)}
 .img-cover{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-.marquee{display:flex;gap:56px;width:max-content;animation:slide 38s linear infinite}
+.marquee{display:flex;gap:56px;width:max-content;animation:slide 38s linear infinite;will-change:transform}
 @keyframes slide{from{transform:translateX(0)}to{transform:translateX(50%)}}
 .card{transition:transform .5s cubic-bezier(.22,1,.36,1),box-shadow .5s cubic-bezier(.22,1,.36,1)}
 .card:hover{transform:translateY(-6px);box-shadow:0 24px 48px -24px rgba(11,34,38,.35)}
@@ -47,7 +47,17 @@ a{color:#123339}a:hover{color:#0B2226}
 .pill{border:1px solid #C9D6D4;background:#FFFFFF;color:#13282B;cursor:pointer}
 .pill-on{border:1px solid #123339;background:#123339;color:#FFFFFF;cursor:pointer}
 input,select,textarea{font-family:inherit}
-input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{outline:2px solid #4FC9C4;outline-offset:2px}
+*{-webkit-tap-highlight-color:transparent}
+button:focus,a:focus{outline:none}
+button:focus-visible,a:focus-visible{outline:2px solid #4FC9C4;outline-offset:2px}
+input:focus,select:focus,textarea:focus{outline:none;border-color:#123339 !important;box-shadow:0 0 0 3px rgba(18,51,57,.12)}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.steps{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:36px 0}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:270px;gap:16px}
+.g-big{grid-column:span 2;grid-row:span 2}
+@media (max-width:1024px){.steps{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:900px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:240px}.g-big{grid-column:span 2;grid-row:span 1}.g-cta{grid-column:span 2}}
+@media (max-width:600px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery{grid-template-columns:minmax(0,1fr);grid-auto-rows:230px}.g-big,.g-cta{grid-column:auto}.g-big{grid-row:span 1}}
 @media (max-width:900px){
 .nav-links{display:none}
 .nav-burger{display:inline-flex}
@@ -138,7 +148,7 @@ html{scroll-behavior:smooth}
 </ul>
 </div>
 
-<aside aria-label="مراحل العمل" style="flex: 1 1 320px; min-width: 0; max-width: 420px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); border-radius: 24px; padding: 28px; backdrop-filter: blur(10px)">
+<aside aria-label="مراحل العمل" style="flex: 1 1 320px; min-width: 0; max-width: 420px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); border-radius: 24px; padding: 28px; ">
 <div class="tile" style="height: 210px; border-radius: 16px; display: flex; align-items: flex-end; padding: 14px">
 <img class="img-cover zoom" src="assets/palm-2.jpg" alt="مسبح بموزاييك أزرق وسط حديقة نخيل في جدة — من مشاريع سلام" width="1280" height="960">
 <span style="position: relative; font-size: 12px; background: rgba(11,34,38,.7); color: #FFFFFF; padding: 6px 12px; border-radius: 999px; line-height: 1.5">من مشاريعنا في جدة</span>
@@ -178,10 +188,10 @@ html{scroll-behavior:smooth}
 <p style="margin: 0 0 14px; font-size: 14px; font-weight: 600; color: #1E6F75; letter-spacing: 0; line-height: 1.6">من نحن</p>
 <h2 style="margin: 0; font-family: 'Alexandria', sans-serif; font-weight: 600; font-size: clamp(1.8rem, 2.4vw + .8rem, 2.9rem); line-height: 1.45; color: #0B2226">شريك واحد لكل مراحل مسبحك، من الخرسانة إلى آخر قطعة موزاييك.</h2>
 <p style="margin: 24px 0 0; font-size: 17px; line-height: 1.95; color: #44585B">تخصصت سلام المتطورة منذ تأسيسها في إنشاء المسابح والعزل والأعمال الكهروميكانيكية، وتقدم خدمات التنفيذ والتجديد والصيانة، إلى جانب توريد المعدات والبلاط ومواد العزل ومستلزمات المسابح بالتجزئة والجملة.</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0; margin-top: 40px; border-top: 1px solid #D5DCD9">
-<div style="padding: 22px 0 0 16px"><p style="margin: 0; font-family: 'Alexandria', sans-serif; font-size: 34px; font-weight: 600; color: #123339; line-height: 1.3">30</p><p style="margin: 6px 0 0; font-size: 14.5px; color: #5A6B6D; line-height: 1.7">عاماً من الخبرة</p></div>
-<div style="padding: 22px 0 0 16px"><p style="margin: 0; font-family: 'Alexandria', sans-serif; font-size: 34px; font-weight: 600; color: #123339; line-height: 1.3">6</p><p style="margin: 6px 0 0; font-size: 14.5px; color: #5A6B6D; line-height: 1.7">خدمات متكاملة</p></div>
-<div style="padding: 22px 0 0 16px"><p style="margin: 0; font-family: 'Alexandria', sans-serif; font-size: 34px; font-weight: 600; color: #123339; line-height: 1.3">3</p><p style="margin: 6px 0 0; font-size: 14.5px; color: #5A6B6D; line-height: 1.7">فروع في جدة والرياض</p></div>
+<div class="stats" style="gap: 0; margin-top: 40px; border-top: 1px solid #D5DCD9">
+<div style="padding: 22px 0 0 12px; min-width: 0"><p style="margin: 0; font-family: 'Alexandria', sans-serif; font-size: clamp(26px, 3vw + 12px, 34px); font-weight: 600; color: #123339; line-height: 1.3">30</p><p style="margin: 6px 0 0; font-size: 14.5px; color: #5A6B6D; line-height: 1.7">عاماً من الخبرة</p></div>
+<div style="padding: 22px 0 0 12px; min-width: 0"><p style="margin: 0; font-family: 'Alexandria', sans-serif; font-size: clamp(26px, 3vw + 12px, 34px); font-weight: 600; color: #123339; line-height: 1.3">6</p><p style="margin: 6px 0 0; font-size: 14.5px; color: #5A6B6D; line-height: 1.7">خدمات متكاملة</p></div>
+<div style="padding: 22px 0 0 12px; min-width: 0"><p style="margin: 0; font-family: 'Alexandria', sans-serif; font-size: clamp(26px, 3vw + 12px, 34px); font-weight: 600; color: #123339; line-height: 1.3">3</p><p style="margin: 6px 0 0; font-size: 14.5px; color: #5A6B6D; line-height: 1.7">فروع في جدة والرياض</p></div>
 </div>
 </div>
 </div>
@@ -247,14 +257,14 @@ html{scroll-behavior:smooth}
 </div>
 <p style="margin: 0; max-width: 360px; font-size: 16px; line-height: 1.9; color: #CFE3E1">تعرف في كل يوم أين وصل مشروعك، وما الخطوة التالية.</p>
 </div>
-<ol style="list-style: none; margin: 56px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0; border-top: 1px solid rgba(255,255,255,.18)">
-<li style="padding: 26px 0 0 18px; position: relative"><span style="position: absolute; top: -6px; inset-inline-start: 0; width: 11px; height: 11px; border-radius: 50%; background: #4FC9C4"></span><p style="margin: 0; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 14px; line-height: 1.6">01</p><p style="margin: 8px 0 0; font-size: 17px; font-weight: 500; line-height: 1.6">التصميم</p></li>
-<li style="padding: 26px 0 0 18px; position: relative"><span style="position: absolute; top: -6px; inset-inline-start: 0; width: 11px; height: 11px; border-radius: 50%; background: #4FC9C4"></span><p style="margin: 0; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 14px; line-height: 1.6">02</p><p style="margin: 8px 0 0; font-size: 17px; font-weight: 500; line-height: 1.6">تجهيز الموقع</p></li>
-<li style="padding: 26px 0 0 18px; position: relative"><span style="position: absolute; top: -6px; inset-inline-start: 0; width: 11px; height: 11px; border-radius: 50%; background: #4FC9C4"></span><p style="margin: 0; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 14px; line-height: 1.6">03</p><p style="margin: 8px 0 0; font-size: 17px; font-weight: 500; line-height: 1.6">الهيكل الخرساني</p></li>
-<li style="padding: 26px 0 0 18px; position: relative"><span style="position: absolute; top: -6px; inset-inline-start: 0; width: 11px; height: 11px; border-radius: 50%; background: #4FC9C4"></span><p style="margin: 0; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 14px; line-height: 1.6">04</p><p style="margin: 8px 0 0; font-size: 17px; font-weight: 500; line-height: 1.6">العزل المائي</p></li>
-<li style="padding: 26px 0 0 18px; position: relative"><span style="position: absolute; top: -6px; inset-inline-start: 0; width: 11px; height: 11px; border-radius: 50%; background: #4FC9C4"></span><p style="margin: 0; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 14px; line-height: 1.6">05</p><p style="margin: 8px 0 0; font-size: 17px; font-weight: 500; line-height: 1.6">الأنظمة والتجهيزات</p></li>
-<li style="padding: 26px 0 0 18px; position: relative"><span style="position: absolute; top: -6px; inset-inline-start: 0; width: 11px; height: 11px; border-radius: 50%; background: #4FC9C4"></span><p style="margin: 0; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 14px; line-height: 1.6">06</p><p style="margin: 8px 0 0; font-size: 17px; font-weight: 500; line-height: 1.6">التشطيبات</p></li>
-<li style="padding: 26px 0 0 18px; position: relative"><span style="position: absolute; top: -6px; inset-inline-start: 0; width: 11px; height: 11px; border-radius: 50%; background: #FFFFFF"></span><p style="margin: 0; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 14px; line-height: 1.6">07</p><p style="margin: 8px 0 0; font-size: 17px; font-weight: 500; line-height: 1.6">الاختبار والتسليم</p></li>
+<ol class="steps" style="list-style: none; margin: 56px 0 0; padding: 0">
+<li style="padding: 26px 0 0 18px; position: relative; border-top: 1px solid rgba(255,255,255,.18); min-width: 0"><span style="position: absolute; top: -6px; inset-inline-start: 0; width: 11px; height: 11px; border-radius: 50%; background: #4FC9C4"></span><p style="margin: 0; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 14px; line-height: 1.6">01</p><p style="margin: 8px 0 0; font-size: 17px; font-weight: 500; line-height: 1.6">التصميم</p></li>
+<li style="padding: 26px 0 0 18px; position: relative; border-top: 1px solid rgba(255,255,255,.18); min-width: 0"><span style="position: absolute; top: -6px; inset-inline-start: 0; width: 11px; height: 11px; border-radius: 50%; background: #4FC9C4"></span><p style="margin: 0; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 14px; line-height: 1.6">02</p><p style="margin: 8px 0 0; font-size: 17px; font-weight: 500; line-height: 1.6">تجهيز الموقع</p></li>
+<li style="padding: 26px 0 0 18px; position: relative; border-top: 1px solid rgba(255,255,255,.18); min-width: 0"><span style="position: absolute; top: -6px; inset-inline-start: 0; width: 11px; height: 11px; border-radius: 50%; background: #4FC9C4"></span><p style="margin: 0; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 14px; line-height: 1.6">03</p><p style="margin: 8px 0 0; font-size: 17px; font-weight: 500; line-height: 1.6">الهيكل الخرساني</p></li>
+<li style="padding: 26px 0 0 18px; position: relative; border-top: 1px solid rgba(255,255,255,.18); min-width: 0"><span style="position: absolute; top: -6px; inset-inline-start: 0; width: 11px; height: 11px; border-radius: 50%; background: #4FC9C4"></span><p style="margin: 0; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 14px; line-height: 1.6">04</p><p style="margin: 8px 0 0; font-size: 17px; font-weight: 500; line-height: 1.6">العزل المائي</p></li>
+<li style="padding: 26px 0 0 18px; position: relative; border-top: 1px solid rgba(255,255,255,.18); min-width: 0"><span style="position: absolute; top: -6px; inset-inline-start: 0; width: 11px; height: 11px; border-radius: 50%; background: #4FC9C4"></span><p style="margin: 0; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 14px; line-height: 1.6">05</p><p style="margin: 8px 0 0; font-size: 17px; font-weight: 500; line-height: 1.6">الأنظمة والتجهيزات</p></li>
+<li style="padding: 26px 0 0 18px; position: relative; border-top: 1px solid rgba(255,255,255,.18); min-width: 0"><span style="position: absolute; top: -6px; inset-inline-start: 0; width: 11px; height: 11px; border-radius: 50%; background: #4FC9C4"></span><p style="margin: 0; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 14px; line-height: 1.6">06</p><p style="margin: 8px 0 0; font-size: 17px; font-weight: 500; line-height: 1.6">التشطيبات</p></li>
+<li style="padding: 26px 0 0 18px; position: relative; border-top: 1px solid rgba(255,255,255,.18); min-width: 0"><span style="position: absolute; top: -6px; inset-inline-start: 0; width: 11px; height: 11px; border-radius: 50%; background: #FFFFFF"></span><p style="margin: 0; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 14px; line-height: 1.6">07</p><p style="margin: 8px 0 0; font-size: 17px; font-weight: 500; line-height: 1.6">الاختبار والتسليم</p></li>
 </ol>
 </div>
 </section>
@@ -269,8 +279,8 @@ html{scroll-behavior:smooth}
 </div>
 <a class="btn" href="#projects" style="display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 22px; border-radius: 999px; background: #123339; color: #FFFFFF; text-decoration: none; font-weight: 500">جميع الصور والفيديوهات</a>
 </div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); grid-auto-rows: 270px; gap: 16px">
-<figure class="tile" style="margin: 0; grid-column: span 2; grid-row: span 2; border-radius: 24px; min-width: 0">
+<div class="gallery">
+<figure class="tile g-big" style="margin: 0; border-radius: 24px; min-width: 0">
 <img class="img-cover zoom" src="assets/palm-1.jpg" alt="مسبح Palm Garden بموزاييك أزرق وأرضيات خشبية وجاكوزي دائري بين أشجار النخيل" width="1280" height="960" loading="lazy">
 <figcaption style="position: absolute; inset-inline: 0; bottom: 0; padding: 28px; background: linear-gradient(0deg, rgba(11,34,38,.88), rgba(11,34,38,0)); color: #FFFFFF"><p style="margin: 0; font-size: 13px; color: #9FD9D6; line-height: 1.6">فلل وقصور — جدة</p><p style="margin: 4px 0 0; font-family: 'Alexandria', sans-serif; font-size: 26px; font-weight: 600; line-height: 1.5" lang="en" dir="ltr">Palm Garden</p></figcaption>
 </figure>
@@ -290,7 +300,7 @@ html{scroll-behavior:smooth}
 <img class="img-cover zoom" src="assets/palm-2.jpg" alt="مسبح Palm Garden من زاوية أخرى مع الجاكوزي والحديقة" width="1280" height="960" loading="lazy">
 <figcaption style="position: absolute; inset-inline: 0; bottom: 0; padding: 22px; background: linear-gradient(0deg, rgba(11,34,38,.88), rgba(11,34,38,0)); color: #FFFFFF"><p style="margin: 0; font-size: 13px; color: #9FD9D6; line-height: 1.6">زاوية أخرى</p><p style="margin: 2px 0 0; font-family: 'Alexandria', sans-serif; font-size: 19px; font-weight: 600; line-height: 1.5" lang="en" dir="ltr">Palm Garden</p></figcaption>
 </figure>
-<a class="card" href="#quote" style="border-radius: 24px; background: #123339; color: #FFFFFF; text-decoration: none; padding: 28px; display: flex; flex-direction: column; justify-content: space-between">
+<a class="card g-cta" href="#quote" style="border-radius: 24px; background: #123339; color: #FFFFFF; text-decoration: none; padding: 28px; display: flex; flex-direction: column; justify-content: space-between">
 <p style="margin: 0; font-family: 'Alexandria', sans-serif; font-size: 24px; font-weight: 600; line-height: 1.5">مشروعك القادم<br>قد يكون هنا.</p>
 <span style="display: inline-flex; align-items: center; gap: 10px; color: #4FC9C4; font-weight: 600; font-size: 16px; line-height: 1.6">ابدأ مشروعك <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"></path></svg></span>
 </a>
@@ -528,7 +538,8 @@ html{scroll-behavior:smooth}
 (function(){
 var v=document.querySelector('.hero-video');
 if(v){v.muted=true;v.defaultPlaybackRate=.75;v.playbackRate=.75;
-if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){v.pause();}else{var p=v.play();if(p&&p.catch)p.catch(function(){});}}
+if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){v.pause();}else{var p=v.play();if(p&&p.catch)p.catch(function(){});}
+if('IntersectionObserver' in window){new IntersectionObserver(function(e){if(e[0].isIntersecting){v.play().catch(function(){});}else{v.pause();}}).observe(v);}}
 var menu=document.getElementById('mobile-menu');
 document.querySelectorAll('[data-menu]').forEach(function(el){el.addEventListener('click',function(){menu.hidden=!menu.hidden;});});
 document.querySelectorAll('.faq-q').forEach(function(btn){btn.addEventListener('click',function(){
