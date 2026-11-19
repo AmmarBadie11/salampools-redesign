@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سلام المتطورة لبرك السباحة | تصميم وإنشاء وصيانة المسابح في جدة والرياض</title>
+<meta name="description" content="سلام المتطورة لبرك السباحة منذ 1996: تصميم وإنشاء وترميم وصيانة المسابح، والأعمال الكهروميكانيكية، والساونا والجاكوزي، وتوريد معدات المسابح في جدة والرياض وأنحاء المملكة.">
+<meta name="theme-color" content="#123339">
+<meta property="og:title" content="سلام المتطورة لبرك السباحة">
+<meta property="og:description" content="مسبحك كما تخيّلته، يُبنى ليدوم سنوات. خبرة منذ 1996.">
+<meta property="og:image" content="assets/palm-1.jpg">
+<link rel="icon" href="assets/logo-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700&amp;family=IBM+Plex+Sans+Arabic:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F4F1EA}
+*{box-sizing:border-box}
+a{color:#123339}a:hover{color:#0B2226}
+.wrap{width:100%;max-width:1240px;margin-inline:auto;padding-inline:clamp(20px,4vw,40px)}
+.nav-links{display:flex}
+.nav-burger{display:none}
+.mob-bar{display:none}
+.water{background-color:#0B2226;background-image:radial-gradient(120% 80% at 80% 10%,rgba(79,201,196,.35) 0%,rgba(18,51,57,0) 55%),radial-gradient(90% 70% at 10% 90%,rgba(38,140,150,.45) 0%,rgba(11,34,38,0) 60%),repeating-radial-gradient(circle at 30% 40%,rgba(255,255,255,.035) 0 2px,rgba(255,255,255,0) 2px 26px),linear-gradient(160deg,#164049 0%,#0B2226 70%);background-size:100% 100%,100% 100%,260px 260px,100% 100%;animation:drift 22s linear infinite}
+@keyframes drift{from{background-position:0 0,0 0,0 0,0 0}to{background-position:0 0,0 0,260px 130px,0 0}}
+.ph{background-image:radial-gradient(80% 70% at 70% 20%,rgba(140,226,222,.55) 0%,rgba(140,226,222,0) 60%),repeating-radial-gradient(circle at 40% 60%,rgba(255,255,255,.07) 0 2px,rgba(255,255,255,0) 2px 22px),linear-gradient(150deg,#2B8C94 0%,#123339 85%)}
+.ph-night{background-image:radial-gradient(60% 50% at 50% 70%,rgba(79,201,196,.7) 0%,rgba(79,201,196,0) 70%),repeating-radial-gradient(circle at 50% 50%,rgba(255,255,255,.06) 0 2px,rgba(255,255,255,0) 2px 20px),linear-gradient(180deg,#06161A 0%,#0F3A40 100%)}
+.ph-sand{background-image:radial-gradient(70% 60% at 30% 30%,rgba(255,255,255,.5) 0%,rgba(255,255,255,0) 60%),linear-gradient(140deg,#7FD0CB 0%,#3E9EA3 55%,#D9CFBD 55.2%,#E9E2D5 100%)}
+.hero{position:relative;background-color:#0B2226;background-image:url(assets/hero-poster.jpg);background-size:cover;background-position:center;overflow:hidden;isolation:isolate}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;filter:blur(1.5px) saturate(.85);transform:scale(1.06)}
+.hero-veil{position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(270deg,rgba(7,26,29,.88) 0%,rgba(7,26,29,.62) 45%,rgba(11,34,38,.45) 100%),linear-gradient(180deg,rgba(7,26,29,.55) 0%,rgba(7,26,29,0) 30%,rgba(7,26,29,0) 65%,rgba(11,34,38,.95) 100%)}
+.img-cover{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.marquee{display:flex;gap:56px;width:max-content;animation:slide 38s linear infinite}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(50%)}}
+.card{transition:transform .5s cubic-bezier(.22,1,.36,1),box-shadow .5s cubic-bezier(.22,1,.36,1)}
+.card:hover{transform:translateY(-6px);box-shadow:0 24px 48px -24px rgba(11,34,38,.35)}
+.btn{transition:transform .3s cubic-bezier(.22,1,.36,1),background-color .3s,color .3s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary:hover{background-color:#7BE0DB !important;color:#0B2226 !important}
+.btn-ghost:hover{background-color:rgba(255,255,255,.12) !important}
+.navlink{color:#D8E6E5;text-decoration:none;position:relative;padding-block:6px}
+.navlink:hover{color:#FFFFFF}
+.tile{overflow:hidden;position:relative}
+.tile .zoom{transition:transform 1s cubic-bezier(.22,1,.36,1)}
+.tile:hover .zoom{transform:scale(1.05)}
+.pill{border:1px solid #C9D6D4;background:#FFFFFF;color:#13282B;cursor:pointer}
+.pill-on{border:1px solid #123339;background:#123339;color:#FFFFFF;cursor:pointer}
+input,select,textarea{font-family:inherit}
+input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{outline:2px solid #4FC9C4;outline-offset:2px}
+@media (max-width:900px){
+.nav-links{display:none}
+.nav-burger{display:inline-flex}
+.hide-sm{display:none !important}
+.mob-bar{display:flex}
+}
+@media (prefers-reduced-motion:reduce){
+.water,.marquee{animation:none}
+.hero-video{display:none}
+.card,.btn,.tile .zoom{transition:none}
+}
+.faq-icon{flex:none;width:40px;height:40px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:22px;font-weight:400;line-height:1;transition:transform .4s cubic-bezier(.22,1,.36,1),background-color .3s;background:#E3EFEC;color:#123339}
+.faq-icon.is-open{transform:rotate(45deg);background:#123339;color:#FFFFFF}
+html{scroll-behavior:smooth}
+[hidden]{display:none !important}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+
+</head>
+<body>
+
+<div style="font-family: 'IBM Plex Sans Arabic', system-ui, sans-serif; color: #13282B; background: #F4F1EA; direction: rtl; overflow-x: hidden; padding-bottom: 0">
+
+<!-- ============ HEADER + HERO ============ -->
+<section class="hero" style="color: #FFFFFF; padding-bottom: clamp(56px,8vw,112px)">
+<video class="hero-video" src="assets/hero-water.mp4" poster="assets/hero-poster.jpg" autoplay="" muted="" loop="" playsinline="" preload="auto" aria-hidden="true" tabindex="-1"></video>
+<div class="hero-veil" aria-hidden="true"></div>
+<header style="position: relative; z-index: 3; border-bottom: 1px solid rgba(255,255,255,.1)">
+<div class="wrap" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 84px">
+<a href="#top" aria-label="سلام المتطورة لبرك السباحة — الرئيسية" style="display: flex; align-items: center; gap: 12px; text-decoration: none; min-height: 44px">
+<span style="flex: none; width: 52px; height: 52px; border-radius: 14px; background: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px -8px rgba(0,0,0,.45)"><img src="assets/logo-icon.png" alt="" width="157" height="216" style="display: block; height: 38px; width: auto"></span>
+<span style="display: flex; flex-direction: column; gap: 6px; line-height: 1.5">
+<span style="font-family: 'Alexandria', sans-serif; font-weight: 700; font-size: 15px; color: #FFFFFF">سلام المتطورة لبرك السباحة</span>
+<span lang="en" dir="ltr" style="font-family: 'Alexandria', sans-serif; font-size: 10.5px; line-height: 1.5; letter-spacing: 2.5px; color: #9FD9D6; text-align: right">SALAM POOLS &amp; SPA</span>
+</span>
+</a>
+<nav class="nav-links" aria-label="القائمة الرئيسية" style="align-items: center; gap: 32px; font-size: 15px">
+<a class="navlink" href="#services">خدماتنا</a>
+<a class="navlink" href="#projects">مشاريعنا</a>
+<a class="navlink" href="#products">المنتجات</a>
+<a class="navlink" href="#about">من نحن</a>
+<a class="navlink" href="#faq">الأسئلة الشائعة</a>
+<a class="navlink" href="https://salampool.com">المتجر</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 12px">
+<a class="btn hide-sm" href="tel:920012510" style="display: inline-flex; align-items: center; gap: 8px; color: #FFFFFF; text-decoration: none; font-size: 15px; padding: 10px 6px; min-height: 44px" dir="ltr"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4FC9C4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg>920012510</a>
+<a class="btn btn-primary hide-sm" href="#quote" style="display: inline-flex; align-items: center; min-height: 46px; padding: 0 22px; border-radius: 999px; background: #4FC9C4; color: #0B2226; font-weight: 600; text-decoration: none; font-size: 15px">اطلب عرض سعر</a>
+<button class="nav-burger" type="button" aria-label="فتح القائمة" data-menu="" style="width: 46px; height: 46px; border-radius: 12px; border: 1px solid rgba(255,255,255,.25); background: transparent; color: #FFFFFF; align-items: center; justify-content: center; cursor: pointer"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"></path></svg></button>
+</div>
+</div>
+<div id="mobile-menu" hidden="">
+<div style="background: #0B2226; border-top: 1px solid rgba(255,255,255,.1); padding: 16px 24px 28px; display: flex; flex-direction: column; gap: 4px">
+<a href="#services" data-menu="" style="color: #FFFFFF; text-decoration: none; padding: 12px 0; font-size: 17px; border-bottom: 1px solid rgba(255,255,255,.08)">خدماتنا</a>
+<a href="#projects" data-menu="" style="color: #FFFFFF; text-decoration: none; padding: 12px 0; font-size: 17px; border-bottom: 1px solid rgba(255,255,255,.08)">مشاريعنا</a>
+<a href="#products" data-menu="" style="color: #FFFFFF; text-decoration: none; padding: 12px 0; font-size: 17px; border-bottom: 1px solid rgba(255,255,255,.08)">المنتجات</a>
+<a href="#about" data-menu="" style="color: #FFFFFF; text-decoration: none; padding: 12px 0; font-size: 17px; border-bottom: 1px solid rgba(255,255,255,.08)">من نحن</a>
+<a href="#faq" data-menu="" style="color: #FFFFFF; text-decoration: none; padding: 12px 0; font-size: 17px; border-bottom: 1px solid rgba(255,255,255,.08)">الأسئلة الشائعة</a>
+<a href="#quote" data-menu="" style="margin-top: 16px; display: flex; justify-content: center; align-items: center; min-height: 50px; border-radius: 999px; background: #4FC9C4; color: #0B2226; font-weight: 600; text-decoration: none">اطلب عرض سعر</a>
+</div>
+</div>
+</header>
+
+<div id="top" class="wrap" style="position: relative; z-index: 2; display: flex; flex-wrap: wrap; gap: clamp(32px,5vw,72px); align-items: flex-end; padding-top: clamp(48px,8vw,104px)">
+<div style="flex: 999 1 520px; min-width: 0">
+<p style="margin: 0 0 22px; display: inline-flex; align-items: center; gap: 10px; font-size: 14px; color: #BDE7E4; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; padding: 8px 16px; line-height: 1.6">
+<span style="width: 8px; height: 8px; border-radius: 50%; background: #4FC9C4; flex: none"></span>
+شركة سعودية منذ 1996 — جدة والرياض وأنحاء المملكة
+</p>
+<h1 style="margin: 0; font-family: 'Alexandria', sans-serif; font-weight: 600; font-size: clamp(2.3rem, 4.6vw + 0.6rem, 4.6rem); line-height: 1.38; letter-spacing: 0">
+مسبحك كما تخيّلته،
+<br>
+<span style="color: #4FC9C4">يُبنى ليدوم</span> سنوات.
+</h1>
+<p style="margin: 28px 0 0; font-size: clamp(1.05rem, .4vw + 1rem, 1.25rem); line-height: 1.9; color: #CFE3E1; max-width: 560px">
+من الفكرة الأولى إلى أول غطسة: تصميم وإنشاء وعزل وتجهيز كهروميكانيكي بيد فريق واحد، لمسابح تجمع جمال التصميم وكفاءة التشغيل.
+</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 40px">
+<a class="btn btn-primary" href="https://wa.me/966531299997?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D9%85%D9%86%D8%A7%D9%82%D8%B4%D8%A9%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D9%85%D8%B3%D8%A8%D8%AD" style="display: inline-flex; align-items: center; gap: 10px; min-height: 56px; padding: 0 28px; border-radius: 999px; background: #4FC9C4; color: #0B2226; font-weight: 600; text-decoration: none; font-size: 16px">
+ناقش مشروعك على واتساب
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"></path></svg>
+</a>
+<a class="btn btn-ghost" href="#projects" style="display: inline-flex; align-items: center; min-height: 56px; padding: 0 28px; border-radius: 999px; border: 1px solid rgba(255,255,255,.35); color: #FFFFFF; text-decoration: none; font-size: 16px">استكشف أعمالنا</a>
+</div>
+<ul style="list-style: none; margin: 44px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 14px 28px; font-size: 14.5px; color: #CFE3E1; line-height: 1.7">
+<li style="display: flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4FC9C4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>ضمان موثّق في العرض</li>
+<li style="display: flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4FC9C4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg>جدول تنفيذ واضح</li>
+<li style="display: flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4FC9C4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>متابعة مباشرة للمشروع</li>
+</ul>
+</div>
+
+<aside aria-label="مراحل العمل" style="flex: 1 1 320px; min-width: 0; max-width: 420px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); border-radius: 24px; padding: 28px; backdrop-filter: blur(10px)">
+<div class="tile" style="height: 210px; border-radius: 16px; display: flex; align-items: flex-end; padding: 14px">
+<img class="img-cover zoom" src="assets/palm-2.jpg" alt="مسبح بموزاييك أزرق وسط حديقة نخيل في جدة — من مشاريع سلام" width="1280" height="960">
+<span style="position: relative; font-size: 12px; background: rgba(11,34,38,.7); color: #FFFFFF; padding: 6px 12px; border-radius: 999px; line-height: 1.5">من مشاريعنا في جدة</span>
+</div>
+<p style="margin: 24px 0 16px; font-family: 'Alexandria', sans-serif; font-size: 15px; color: #9FD9D6; line-height: 1.6">أربع خطوات من المعاينة إلى التشغيل</p>
+<ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+<li style="background: rgba(255,255,255,.06); border-radius: 14px; padding: 14px; line-height: 1.6"><span style="display: block; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 13px">01</span><span style="font-size: 15px; font-weight: 500">المعاينة</span></li>
+<li style="background: rgba(255,255,255,.06); border-radius: 14px; padding: 14px; line-height: 1.6"><span style="display: block; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 13px">02</span><span style="font-size: 15px; font-weight: 500">الدراسة</span></li>
+<li style="background: rgba(255,255,255,.06); border-radius: 14px; padding: 14px; line-height: 1.6"><span style="display: block; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 13px">03</span><span style="font-size: 15px; font-weight: 500">التنفيذ</span></li>
+<li style="background: rgba(255,255,255,.06); border-radius: 14px; padding: 14px; line-height: 1.6"><span style="display: block; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 13px">04</span><span style="font-size: 15px; font-weight: 500">التشغيل</span></li>
+</ol>
+</aside>
+</div>
+</section>
+
+<!-- ============ CLIENTS MARQUEE ============ -->
+<section aria-label="عملاؤنا" style="background: #0B2226; color: #CFE3E1; padding: 28px 0; overflow: hidden; border-top: 1px solid rgba(255,255,255,.06)">
+<div class="wrap" style="display: flex; align-items: center; gap: 32px">
+<p style="margin: 0; flex: none; font-size: 13.5px; color: #9FD9D6; line-height: 1.6; max-width: 150px">جهات كبرى وثقت بخبرتنا</p>
+<div style="overflow: hidden; flex: 1; min-width: 0; mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent)">
+<div class="marquee" style="font-family: 'Alexandria', sans-serif; font-size: 19px; font-weight: 500; white-space: nowrap; line-height: 1.6">
+<span>أرامكو السعودية</span><span style="color: #4FC9C4">◦</span><span>مجموعة بن لادن السعودية</span><span style="color: #4FC9C4">◦</span><span>سعودي أوجيه</span><span style="color: #4FC9C4">◦</span><span>رايثيون</span><span style="color: #4FC9C4">◦</span><span>الدفاع المدني</span><span style="color: #4FC9C4">◦</span><span>سالكو</span><span style="color: #4FC9C4">◦</span><span>التعمير</span><span style="color: #4FC9C4">◦</span><span>الحربي</span><span style="color: #4FC9C4">◦</span><span>الرضوان</span><span style="color: #4FC9C4">◦</span>
+<span>أرامكو السعودية</span><span style="color: #4FC9C4">◦</span><span>مجموعة بن لادن السعودية</span><span style="color: #4FC9C4">◦</span><span>سعودي أوجيه</span><span style="color: #4FC9C4">◦</span><span>رايثيون</span><span style="color: #4FC9C4">◦</span><span>الدفاع المدني</span><span style="color: #4FC9C4">◦</span><span>سالكو</span><span style="color: #4FC9C4">◦</span><span>التعمير</span><span style="color: #4FC9C4">◦</span><span>الحربي</span><span style="color: #4FC9C4">◦</span><span>الرضوان</span><span style="color: #4FC9C4">◦</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" style="padding-block: clamp(72px,10vw,140px)">
+<div class="wrap" style="display: flex; flex-wrap: wrap; gap: clamp(40px,6vw,96px); align-items: center">
+<div style="flex: 1 1 380px; min-width: 0; position: relative">
+<p aria-hidden="true" style="margin: 0; font-family: 'Alexandria', sans-serif; font-weight: 700; font-size: clamp(6rem, 14vw, 13rem); line-height: 1.1; color: transparent; -webkit-text-stroke: 1.5px #123339; opacity: .9" dir="ltr">1996</p>
+<p style="margin: 8px 0 0; font-family: 'Alexandria', sans-serif; font-size: 18px; color: #123339; line-height: 1.6">ثلاثون عاماً من بناء المسابح في المملكة</p>
+</div>
+<div style="flex: 1.2 1 460px; min-width: 0">
+<p style="margin: 0 0 14px; font-size: 14px; font-weight: 600; color: #1E6F75; letter-spacing: 0; line-height: 1.6">من نحن</p>
+<h2 style="margin: 0; font-family: 'Alexandria', sans-serif; font-weight: 600; font-size: clamp(1.8rem, 2.4vw + .8rem, 2.9rem); line-height: 1.45; color: #0B2226">شريك واحد لكل مراحل مسبحك، من الخرسانة إلى آخر قطعة موزاييك.</h2>
+<p style="margin: 24px 0 0; font-size: 17px; line-height: 1.95; color: #44585B">تخصصت سلام المتطورة منذ تأسيسها في إنشاء المسابح والعزل والأعمال الكهروميكانيكية، وتقدم خدمات التنفيذ والتجديد والصيانة، إلى جانب توريد المعدات والبلاط ومواد العزل ومستلزمات المسابح بالتجزئة والجملة.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0; margin-top: 40px; border-top: 1px solid #D5DCD9">
+<div style="padding: 22px 0 0 16px"><p style="margin: 0; font-family: 'Alexandria', sans-serif; font-size: 34px; font-weight: 600; color: #123339; line-height: 1.3">30</p><p style="margin: 6px 0 0; font-size: 14.5px; color: #5A6B6D; line-height: 1.7">عاماً من الخبرة</p></div>
+<div style="padding: 22px 0 0 16px"><p style="margin: 0; font-family: 'Alexandria', sans-serif; font-size: 34px; font-weight: 600; color: #123339; line-height: 1.3">6</p><p style="margin: 6px 0 0; font-size: 14.5px; color: #5A6B6D; line-height: 1.7">خدمات متكاملة</p></div>
+<div style="padding: 22px 0 0 16px"><p style="margin: 0; font-family: 'Alexandria', sans-serif; font-size: 34px; font-weight: 600; color: #123339; line-height: 1.3">3</p><p style="margin: 6px 0 0; font-size: 14.5px; color: #5A6B6D; line-height: 1.7">فروع في جدة والرياض</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" style="padding-bottom: clamp(72px,10vw,140px)">
+<div class="wrap">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 48px">
+<div style="max-width: 640px">
+<p style="margin: 0 0 14px; font-size: 14px; font-weight: 600; color: #1E6F75; line-height: 1.6">خدماتنا</p>
+<h2 style="margin: 0; font-family: 'Alexandria', sans-serif; font-weight: 600; font-size: clamp(1.8rem, 2.4vw + .8rem, 2.9rem); line-height: 1.45; color: #0B2226">كل ما يحتاجه مسبحك، تحت سقف واحد.</h2>
+</div>
+<a class="btn" href="#quote" style="display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 22px; border-radius: 999px; border: 1px solid #123339; color: #123339; text-decoration: none; font-weight: 500">احصل على عرض لخدمتك
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"></path></svg></a>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px">
+<article class="card" style="grid-row: span 2; background: #123339; color: #FFFFFF; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; justify-content: space-between; gap: 28px; min-height: 420px">
+<div>
+<p style="margin: 0; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 14px; line-height: 1.6">01 — الخدمة الأساسية</p>
+<h3 style="margin: 16px 0 0; font-family: 'Alexandria', sans-serif; font-size: 28px; font-weight: 600; line-height: 1.5">تصميم وإنشاء المسابح</h3>
+<p style="margin: 14px 0 0; font-size: 16px; line-height: 1.9; color: #CFE3E1">تصميم يناسب المكان، وتنفيذ متكامل للهيكل والعزل والأنظمة والتشطيبات حتى التسليم.</p>
+</div>
+<div class="tile" style="height: 210px; border-radius: 16px"><img class="img-cover zoom" src="assets/villa-overflow.jpg" alt="مسبح فيلا بحواف موزاييك وأرضيات حجرية رمادية" width="1200" height="555" loading="lazy"></div>
+</article>
+<article class="card" style="background: #FFFFFF; border-radius: 24px; padding: 28px; border: 1px solid #E2E6E2">
+<div style="display: flex; justify-content: space-between; align-items: center"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#123339" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M21 12a9 9 0 0 1-15 6.7L3 16M3 21v-5h5"></path></svg><span style="font-family: 'Alexandria', sans-serif; color: #8A9A9B; font-size: 14px">02</span></div>
+<h3 style="margin: 20px 0 0; font-family: 'Alexandria', sans-serif; font-size: 21px; font-weight: 600; line-height: 1.5; color: #0B2226">ترميم وتجديد المسابح</h3>
+<p style="margin: 10px 0 0; font-size: 15.5px; line-height: 1.85; color: #5A6B6D">نعالج الحالة ونطوّر التشطيبات والتجهيزات بتناسق مع المكان.</p>
+</article>
+<article class="card" style="background: #FFFFFF; border-radius: 24px; padding: 28px; border: 1px solid #E2E6E2">
+<div style="display: flex; justify-content: space-between; align-items: center"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#123339" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 0 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 0 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 0 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 0 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"></path></svg><span style="font-family: 'Alexandria', sans-serif; color: #8A9A9B; font-size: 14px">03</span></div>
+<h3 style="margin: 20px 0 0; font-family: 'Alexandria', sans-serif; font-size: 21px; font-weight: 600; line-height: 1.5; color: #0B2226">الأعمال الكهروميكانيكية</h3>
+<p style="margin: 10px 0 0; font-size: 15.5px; line-height: 1.85; color: #5A6B6D">توريد وتركيب أنظمة الضخ والترشيح والتعقيم والتحكم والإضاءة.</p>
+</article>
+<article class="card" style="background: #FFFFFF; border-radius: 24px; padding: 28px; border: 1px solid #E2E6E2">
+<div style="display: flex; justify-content: space-between; align-items: center"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#123339" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.7 6.3 8.4a8 8 0 1 0 11.4 0z"></path><path d="M9 14a3 3 0 0 0 3 3"></path></svg><span style="font-family: 'Alexandria', sans-serif; color: #8A9A9B; font-size: 14px">04</span></div>
+<h3 style="margin: 20px 0 0; font-family: 'Alexandria', sans-serif; font-size: 21px; font-weight: 600; line-height: 1.5; color: #0B2226">صيانة المسابح</h3>
+<p style="margin: 10px 0 0; font-size: 15.5px; line-height: 1.85; color: #5A6B6D">عناية دورية بالمياه والتجهيزات، مع عقود صيانة سنوية بزيارات محددة.</p>
+</article>
+<article class="card" style="background: #FFFFFF; border-radius: 24px; padding: 28px; border: 1px solid #E2E6E2">
+<div style="display: flex; justify-content: space-between; align-items: center"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#123339" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3c-1 1.5 1 3 0 4.5M12 3c-1 1.5 1 3 0 4.5M16 3c-1 1.5 1 3 0 4.5"></path><path d="M3 12h18v3a6 6 0 0 1-6 6H9a6 6 0 0 1-6-6z"></path></svg><span style="font-family: 'Alexandria', sans-serif; color: #8A9A9B; font-size: 14px">05</span></div>
+<h3 style="margin: 20px 0 0; font-family: 'Alexandria', sans-serif; font-size: 21px; font-weight: 600; line-height: 1.5; color: #0B2226">الساونا والبخار والجاكوزي</h3>
+<p style="margin: 10px 0 0; font-size: 15.5px; line-height: 1.85; color: #5A6B6D">مساحات استرخاء متكاملة مع التشطيبات والتشغيل.</p>
+</article>
+<article class="card" style="background: #E3EFEC; border-radius: 24px; padding: 28px; border: 1px solid #CFE0DC">
+<div style="display: flex; justify-content: space-between; align-items: center"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#123339" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8 12 3 3 8v8l9 5 9-5z"></path><path d="M3 8l9 5 9-5M12 13v8"></path></svg><span style="font-family: 'Alexandria', sans-serif; color: #5A6B6D; font-size: 14px">06</span></div>
+<h3 style="margin: 20px 0 0; font-family: 'Alexandria', sans-serif; font-size: 21px; font-weight: 600; line-height: 1.5; color: #0B2226">معدات ومنتجات المسابح</h3>
+<p style="margin: 10px 0 0; font-size: 15.5px; line-height: 1.85; color: #44585B">من العزل والتشطيب إلى التشغيل والعناية بالمياه — تجزئة وجملة.</p>
+</article>
+</div>
+</div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section aria-labelledby="process-title" style="background: #123339; color: #FFFFFF; padding-block: clamp(72px,9vw,128px)">
+<div class="wrap">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; align-items: flex-end">
+<div style="max-width: 620px">
+<p style="margin: 0 0 14px; font-size: 14px; font-weight: 600; color: #4FC9C4; line-height: 1.6">كيف ننفّذ</p>
+<h2 id="process-title" style="margin: 0; font-family: 'Alexandria', sans-serif; font-weight: 600; font-size: clamp(1.8rem, 2.4vw + .8rem, 2.9rem); line-height: 1.45">سبع مراحل واضحة، بلا مفاجآت في منتصف الطريق.</h2>
+</div>
+<p style="margin: 0; max-width: 360px; font-size: 16px; line-height: 1.9; color: #CFE3E1">تعرف في كل يوم أين وصل مشروعك، وما الخطوة التالية.</p>
+</div>
+<ol style="list-style: none; margin: 56px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0; border-top: 1px solid rgba(255,255,255,.18)">
+<li style="padding: 26px 0 0 18px; position: relative"><span style="position: absolute; top: -6px; inset-inline-start: 0; width: 11px; height: 11px; border-radius: 50%; background: #4FC9C4"></span><p style="margin: 0; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 14px; line-height: 1.6">01</p><p style="margin: 8px 0 0; font-size: 17px; font-weight: 500; line-height: 1.6">التصميم</p></li>
+<li style="padding: 26px 0 0 18px; position: relative"><span style="position: absolute; top: -6px; inset-inline-start: 0; width: 11px; height: 11px; border-radius: 50%; background: #4FC9C4"></span><p style="margin: 0; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 14px; line-height: 1.6">02</p><p style="margin: 8px 0 0; font-size: 17px; font-weight: 500; line-height: 1.6">تجهيز الموقع</p></li>
+<li style="padding: 26px 0 0 18px; position: relative"><span style="position: absolute; top: -6px; inset-inline-start: 0; width: 11px; height: 11px; border-radius: 50%; background: #4FC9C4"></span><p style="margin: 0; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 14px; line-height: 1.6">03</p><p style="margin: 8px 0 0; font-size: 17px; font-weight: 500; line-height: 1.6">الهيكل الخرساني</p></li>
+<li style="padding: 26px 0 0 18px; position: relative"><span style="position: absolute; top: -6px; inset-inline-start: 0; width: 11px; height: 11px; border-radius: 50%; background: #4FC9C4"></span><p style="margin: 0; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 14px; line-height: 1.6">04</p><p style="margin: 8px 0 0; font-size: 17px; font-weight: 500; line-height: 1.6">العزل المائي</p></li>
+<li style="padding: 26px 0 0 18px; position: relative"><span style="position: absolute; top: -6px; inset-inline-start: 0; width: 11px; height: 11px; border-radius: 50%; background: #4FC9C4"></span><p style="margin: 0; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 14px; line-height: 1.6">05</p><p style="margin: 8px 0 0; font-size: 17px; font-weight: 500; line-height: 1.6">الأنظمة والتجهيزات</p></li>
+<li style="padding: 26px 0 0 18px; position: relative"><span style="position: absolute; top: -6px; inset-inline-start: 0; width: 11px; height: 11px; border-radius: 50%; background: #4FC9C4"></span><p style="margin: 0; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 14px; line-height: 1.6">06</p><p style="margin: 8px 0 0; font-size: 17px; font-weight: 500; line-height: 1.6">التشطيبات</p></li>
+<li style="padding: 26px 0 0 18px; position: relative"><span style="position: absolute; top: -6px; inset-inline-start: 0; width: 11px; height: 11px; border-radius: 50%; background: #FFFFFF"></span><p style="margin: 0; font-family: 'Alexandria', sans-serif; color: #4FC9C4; font-size: 14px; line-height: 1.6">07</p><p style="margin: 8px 0 0; font-size: 17px; font-weight: 500; line-height: 1.6">الاختبار والتسليم</p></li>
+</ol>
+</div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects" style="padding-block: clamp(72px,10vw,140px)">
+<div class="wrap">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 44px">
+<div style="max-width: 620px">
+<p style="margin: 0 0 14px; font-size: 14px; font-weight: 600; color: #1E6F75; line-height: 1.6">مشاريعنا</p>
+<h2 style="margin: 0; font-family: 'Alexandria', sans-serif; font-weight: 600; font-size: clamp(1.8rem, 2.4vw + .8rem, 2.9rem); line-height: 1.45; color: #0B2226">أعمال تتحدث عنّا قبل أن نتحدث.</h2>
+</div>
+<a class="btn" href="#projects" style="display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 22px; border-radius: 999px; background: #123339; color: #FFFFFF; text-decoration: none; font-weight: 500">جميع الصور والفيديوهات</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); grid-auto-rows: 270px; gap: 16px">
+<figure class="tile" style="margin: 0; grid-column: span 2; grid-row: span 2; border-radius: 24px; min-width: 0">
+<img class="img-cover zoom" src="assets/palm-1.jpg" alt="مسبح Palm Garden بموزاييك أزرق وأرضيات خشبية وجاكوزي دائري بين أشجار النخيل" width="1280" height="960" loading="lazy">
+<figcaption style="position: absolute; inset-inline: 0; bottom: 0; padding: 28px; background: linear-gradient(0deg, rgba(11,34,38,.88), rgba(11,34,38,0)); color: #FFFFFF"><p style="margin: 0; font-size: 13px; color: #9FD9D6; line-height: 1.6">فلل وقصور — جدة</p><p style="margin: 4px 0 0; font-family: 'Alexandria', sans-serif; font-size: 26px; font-weight: 600; line-height: 1.5" lang="en" dir="ltr">Palm Garden</p></figcaption>
+</figure>
+<figure class="tile" style="margin: 0; border-radius: 24px; min-width: 0">
+<img class="img-cover zoom" src="assets/seaside-round.jpg" alt="مسبح دائري Seaside Round على الواجهة البحرية" width="1280" height="720" loading="lazy">
+<figcaption style="position: absolute; inset-inline: 0; bottom: 0; padding: 22px; background: linear-gradient(0deg, rgba(11,34,38,.88), rgba(11,34,38,0)); color: #FFFFFF"><p style="margin: 0; font-size: 13px; color: #9FD9D6; line-height: 1.6">إطلالة بحرية</p><p style="margin: 2px 0 0; font-family: 'Alexandria', sans-serif; font-size: 19px; font-weight: 600; line-height: 1.5" lang="en" dir="ltr">Seaside Round</p></figcaption>
+</figure>
+<figure class="tile" style="margin: 0; border-radius: 24px; min-width: 0">
+<img class="img-cover zoom" src="assets/black-granite.jpg" alt="مسبح فيلا بإطار من الجرانيت الأسود وموزاييك أزرق" width="1280" height="960" loading="lazy">
+<figcaption style="position: absolute; inset-inline: 0; bottom: 0; padding: 22px; background: linear-gradient(0deg, rgba(11,34,38,.88), rgba(11,34,38,0)); color: #FFFFFF"><p style="margin: 0; font-size: 13px; color: #9FD9D6; line-height: 1.6">فلل خاصة</p><p style="margin: 2px 0 0; font-family: 'Alexandria', sans-serif; font-size: 19px; font-weight: 600; line-height: 1.5">مسبح بإطار جرانيت أسود</p></figcaption>
+</figure>
+<figure class="tile" style="margin: 0; border-radius: 24px; min-width: 0">
+<img class="img-cover zoom" src="assets/villa-overflow.jpg" alt="مسبح فيلا حديث بحواف موزاييك وأرضيات حجرية" width="1200" height="555" loading="lazy">
+<figcaption style="position: absolute; inset-inline: 0; bottom: 0; padding: 22px; background: linear-gradient(0deg, rgba(11,34,38,.88), rgba(11,34,38,0)); color: #FFFFFF"><p style="margin: 0; font-size: 13px; color: #9FD9D6; line-height: 1.6">فلل خاصة</p><p style="margin: 2px 0 0; font-family: 'Alexandria', sans-serif; font-size: 19px; font-weight: 600; line-height: 1.5">مسبح بحواف موزاييك</p></figcaption>
+</figure>
+<figure class="tile" style="margin: 0; border-radius: 24px; min-width: 0">
+<img class="img-cover zoom" src="assets/palm-2.jpg" alt="مسبح Palm Garden من زاوية أخرى مع الجاكوزي والحديقة" width="1280" height="960" loading="lazy">
+<figcaption style="position: absolute; inset-inline: 0; bottom: 0; padding: 22px; background: linear-gradient(0deg, rgba(11,34,38,.88), rgba(11,34,38,0)); color: #FFFFFF"><p style="margin: 0; font-size: 13px; color: #9FD9D6; line-height: 1.6">زاوية أخرى</p><p style="margin: 2px 0 0; font-family: 'Alexandria', sans-serif; font-size: 19px; font-weight: 600; line-height: 1.5" lang="en" dir="ltr">Palm Garden</p></figcaption>
+</figure>
+<a class="card" href="#quote" style="border-radius: 24px; background: #123339; color: #FFFFFF; text-decoration: none; padding: 28px; display: flex; flex-direction: column; justify-content: space-between">
+<p style="margin: 0; font-family: 'Alexandria', sans-serif; font-size: 24px; font-weight: 600; line-height: 1.5">مشروعك القادم<br>قد يكون هنا.</p>
+<span style="display: inline-flex; align-items: center; gap: 10px; color: #4FC9C4; font-weight: 600; font-size: 16px; line-height: 1.6">ابدأ مشروعك <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"></path></svg></span>
+</a>
+</div>
+</div>
+</section>
+
+<!-- ============ SECTORS ============ -->
+<section aria-labelledby="sectors-title" style="padding-bottom: clamp(72px,10vw,140px)">
+<div class="wrap" style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start">
+<div style="flex: 1 1 320px; min-width: 0">
+<p style="margin: 0 0 14px; font-size: 14px; font-weight: 600; color: #1E6F75; line-height: 1.6">من نخدم</p>
+<h2 id="sectors-title" style="margin: 0; font-family: 'Alexandria', sans-serif; font-weight: 600; font-size: clamp(1.8rem, 2.4vw + .8rem, 2.9rem); line-height: 1.45; color: #0B2226">من مسبح فيلا خاصة إلى مشاريع حكومية كبرى.</h2>
+</div>
+<ul style="flex: 1.4 1 460px; min-width: 0; list-style: none; margin: 0; padding: 0; border-top: 1px solid #D5DCD9">
+<li style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 0; border-bottom: 1px solid #D5DCD9"><span style="font-family: 'Alexandria', sans-serif; font-size: clamp(1.2rem,1vw + .9rem,1.6rem); font-weight: 500; color: #0B2226; line-height: 1.5">الفلل والقصور</span><span style="font-family: 'Alexandria', sans-serif; color: #8A9A9B; font-size: 14px">01</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 0; border-bottom: 1px solid #D5DCD9"><span style="font-family: 'Alexandria', sans-serif; font-size: clamp(1.2rem,1vw + .9rem,1.6rem); font-weight: 500; color: #0B2226; line-height: 1.5">الفنادق والمنتجعات</span><span style="font-family: 'Alexandria', sans-serif; color: #8A9A9B; font-size: 14px">02</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 0; border-bottom: 1px solid #D5DCD9"><span style="font-family: 'Alexandria', sans-serif; font-size: clamp(1.2rem,1vw + .9rem,1.6rem); font-weight: 500; color: #0B2226; line-height: 1.5">النوادي الرياضية</span><span style="font-family: 'Alexandria', sans-serif; color: #8A9A9B; font-size: 14px">03</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 0; border-bottom: 1px solid #D5DCD9"><span style="font-family: 'Alexandria', sans-serif; font-size: clamp(1.2rem,1vw + .9rem,1.6rem); font-weight: 500; color: #0B2226; line-height: 1.5">القطاع العام</span><span style="font-family: 'Alexandria', sans-serif; color: #8A9A9B; font-size: 14px">04</span></li>
+<li style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 0; border-bottom: 1px solid #D5DCD9"><span style="font-family: 'Alexandria', sans-serif; font-size: clamp(1.2rem,1vw + .9rem,1.6rem); font-weight: 500; color: #0B2226; line-height: 1.5">شركات المقاولات</span><span style="font-family: 'Alexandria', sans-serif; color: #8A9A9B; font-size: 14px">05</span></li>
+</ul>
+</div>
+</section>
+
+<!-- ============ PRODUCTS ============ -->
+<section id="products" style="padding-bottom: clamp(72px,10vw,140px)">
+<div class="wrap">
+<div style="background: #E3EFEC; border-radius: 32px; padding: clamp(28px,5vw,64px); display: flex; flex-wrap: wrap; gap: 40px; align-items: center; justify-content: space-between">
+<div style="flex: 1 1 360px; min-width: 0">
+<p style="margin: 0 0 14px; font-size: 14px; font-weight: 600; color: #1E6F75; line-height: 1.6">المنتجات والتجهيزات</p>
+<h2 style="margin: 0; font-family: 'Alexandria', sans-serif; font-weight: 600; font-size: clamp(1.6rem, 2vw + .8rem, 2.5rem); line-height: 1.5; color: #0B2226">معدات أصلية للمسابح، <span style="background: #123339; color: #FFFFFF; padding: .05em .3em .12em; border-radius: 8px; -webkit-box-decoration-break: clone; box-decoration-break: clone">بالتجزئة</span> والجملة.</h2>
+<p style="margin: 18px 0 0; font-size: 16.5px; line-height: 1.9; color: #44585B">كل ما تحتاجه من العزل والتشطيب حتى التشغيل والعناية بالمياه، متوفر في متجرنا الإلكتروني.</p>
+<a class="btn" href="https://salampool.com" style="display: inline-flex; align-items: center; gap: 10px; margin-top: 28px; min-height: 52px; padding: 0 26px; border-radius: 999px; background: #123339; color: #FFFFFF; text-decoration: none; font-weight: 500">تسوّق من المتجر
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"></path></svg></a>
+</div>
+<ul style="flex: 1 1 380px; min-width: 0; list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px">
+<li style="background: #FFFFFF; border-radius: 999px; padding: 12px 22px; font-size: 16px; font-weight: 500; line-height: 1.6; color: #0B2226">مضخات</li>
+<li style="background: #FFFFFF; border-radius: 999px; padding: 12px 22px; font-size: 16px; font-weight: 500; line-height: 1.6; color: #0B2226">فلاتر</li>
+<li style="background: #FFFFFF; border-radius: 999px; padding: 12px 22px; font-size: 16px; font-weight: 500; line-height: 1.6; color: #0B2226">موزاييك</li>
+<li style="background: #FFFFFF; border-radius: 999px; padding: 12px 22px; font-size: 16px; font-weight: 500; line-height: 1.6; color: #0B2226">إضاءة</li>
+<li style="background: #FFFFFF; border-radius: 999px; padding: 12px 22px; font-size: 16px; font-weight: 500; line-height: 1.6; color: #0B2226">بلاط</li>
+<li style="background: #FFFFFF; border-radius: 999px; padding: 12px 22px; font-size: 16px; font-weight: 500; line-height: 1.6; color: #0B2226">مواد عزل</li>
+<li style="background: #FFFFFF; border-radius: 999px; padding: 12px 22px; font-size: 16px; font-weight: 500; line-height: 1.6; color: #0B2226">مواد تجهيز وتشطيب</li>
+<li style="background: #FFFFFF; border-radius: 999px; padding: 12px 22px; font-size: 16px; font-weight: 500; line-height: 1.6; color: #0B2226">مستلزمات العناية بالمياه</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" style="padding-bottom: clamp(72px,10vw,140px)">
+<div class="wrap" style="display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start">
+<div style="flex: 1 1 300px; min-width: 0">
+<p style="margin: 0 0 14px; font-size: 14px; font-weight: 600; color: #1E6F75; line-height: 1.6">الأسئلة الشائعة</p>
+<h2 style="margin: 0; font-family: 'Alexandria', sans-serif; font-weight: 600; font-size: clamp(1.8rem, 2.4vw + .8rem, 2.9rem); line-height: 1.45; color: #0B2226">قبل أن تسأل.</h2>
+<p style="margin: 18px 0 0; font-size: 16px; line-height: 1.9; color: #5A6B6D">لم تجد إجابتك؟ فريقنا يرد عليك مباشرة.</p>
+<a class="btn" href="https://wa.me/966531299997" style="display: inline-flex; align-items: center; margin-top: 22px; min-height: 48px; padding: 0 22px; border-radius: 999px; border: 1px solid #123339; color: #123339; text-decoration: none; font-weight: 500">اسألنا على واتساب</a>
+</div>
+<div style="flex: 1.6 1 480px; min-width: 0; border-top: 1px solid #D5DCD9">
+
+<div style="border-bottom: 1px solid #D5DCD9">
+<button type="button" class="faq-q" aria-expanded="true" style="width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px 0; background: transparent; border: 0; cursor: pointer; text-align: start; font-family: 'Alexandria', sans-serif; font-size: clamp(1.05rem,.5vw + .95rem,1.25rem); font-weight: 500; color: #0B2226; line-height: 1.6; min-height: 44px">
+<span>كيف تعالجون تسربات المسبح؟</span>
+<span aria-hidden="true" class="faq-icon is-open">+</span>
+</button>
+<div class="faq-a">
+<p style="margin: 0; padding: 0 0 26px; font-size: 16px; line-height: 1.95; color: #44585B; max-width: 640px">نبدأ بمعاينة المسبح وتشخيص مصدر التسرب بدقة، ثم نحدد طريقة المعالجة المناسبة لحالته.</p>
+</div>
+</div>
+
+<div style="border-bottom: 1px solid #D5DCD9">
+<button type="button" class="faq-q" aria-expanded="false" style="width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px 0; background: transparent; border: 0; cursor: pointer; text-align: start; font-family: 'Alexandria', sans-serif; font-size: clamp(1.05rem,.5vw + .95rem,1.25rem); font-weight: 500; color: #0B2226; line-height: 1.6; min-height: 44px">
+<span>هل توفرون المعدات مع التركيب؟</span>
+<span aria-hidden="true" class="faq-icon">+</span>
+</button>
+<div class="faq-a" hidden="">
+<p style="margin: 0; padding: 0 0 26px; font-size: 16px; line-height: 1.95; color: #44585B; max-width: 640px">نعم، نورّد المعدات ونركّبها، ويحدد العرض الفني والمالي نطاق التوريد بالتفصيل.</p>
+</div>
+</div>
+
+<div style="border-bottom: 1px solid #D5DCD9">
+<button type="button" class="faq-q" aria-expanded="false" style="width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px 0; background: transparent; border: 0; cursor: pointer; text-align: start; font-family: 'Alexandria', sans-serif; font-size: clamp(1.05rem,.5vw + .95rem,1.25rem); font-weight: 500; color: #0B2226; line-height: 1.6; min-height: 44px">
+<span>هل لديكم عقود صيانة سنوية؟</span>
+<span aria-hidden="true" class="faq-icon">+</span>
+</button>
+<div class="faq-a" hidden="">
+<p style="margin: 0; padding: 0 0 26px; font-size: 16px; line-height: 1.95; color: #44585B; max-width: 640px">نعم، نوفر عقود صيانة سنوية تحدد عدد الزيارات ونطاق الأعمال المشمولة.</p>
+</div>
+</div>
+
+<div style="border-bottom: 1px solid #D5DCD9">
+<button type="button" class="faq-q" aria-expanded="false" style="width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px 0; background: transparent; border: 0; cursor: pointer; text-align: start; font-family: 'Alexandria', sans-serif; font-size: clamp(1.05rem,.5vw + .95rem,1.25rem); font-weight: 500; color: #0B2226; line-height: 1.6; min-height: 44px">
+<span>ما مدة الضمان؟</span>
+<span aria-hidden="true" class="faq-icon">+</span>
+</button>
+<div class="faq-a" hidden="">
+<p style="margin: 0; padding: 0 0 26px; font-size: 16px; line-height: 1.95; color: #44585B; max-width: 640px">يُحدَّد الضمان لكل معدة وعمل بوضوح ضمن عرض السعر المقدم لك.</p>
+</div>
+</div>
+
+<div style="border-bottom: 1px solid #D5DCD9">
+<button type="button" class="faq-q" aria-expanded="false" style="width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px 0; background: transparent; border: 0; cursor: pointer; text-align: start; font-family: 'Alexandria', sans-serif; font-size: clamp(1.05rem,.5vw + .95rem,1.25rem); font-weight: 500; color: #0B2226; line-height: 1.6; min-height: 44px">
+<span>هل تنفذون مشاريع خارج جدة والرياض؟</span>
+<span aria-hidden="true" class="faq-icon">+</span>
+</button>
+<div class="faq-a" hidden="">
+<p style="margin: 0; padding: 0 0 26px; font-size: 16px; line-height: 1.95; color: #44585B; max-width: 640px">نعم، ننفذ مشاريع في أنحاء المملكة بحسب طبيعة المشروع وحجمه.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ============ QUOTE + CONTACT ============ -->
+<section id="quote" class="water" style="color: #FFFFFF; padding-block: clamp(72px,10vw,128px)">
+<div class="wrap" style="display: flex; flex-wrap: wrap; gap: clamp(40px,6vw,80px); align-items: flex-start">
+<div style="flex: 1 1 360px; min-width: 0">
+<p style="margin: 0 0 14px; font-size: 14px; font-weight: 600; color: #4FC9C4; line-height: 1.6">ابدأ مشروعك</p>
+<h2 style="margin: 0; font-family: 'Alexandria', sans-serif; font-weight: 600; font-size: clamp(1.9rem, 2.6vw + .8rem, 3.1rem); line-height: 1.45">اطلب عرض سعر خلال دقيقة.</h2>
+<p style="margin: 20px 0 0; font-size: 17px; line-height: 1.9; color: #CFE3E1; max-width: 460px">الطلب لا يُلزمك بالشراء، ونرد عليك خلال ساعات العمل.</p>
+<div style="margin-top: 40px; display: flex; flex-direction: column; gap: 12px">
+<a class="btn" href="tel:920012510" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: 18px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); color: #FFFFFF; text-decoration: none">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4FC9C4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg>
+<span style="display: flex; flex-direction: column; line-height: 1.5"><span style="font-size: 13px; color: #9FD9D6">الرقم الموحد</span><span style="font-family: 'Alexandria', sans-serif; font-size: 19px" dir="ltr">920012510</span></span>
+</a>
+<a class="btn" href="https://wa.me/966531299997" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: 18px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); color: #FFFFFF; text-decoration: none">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4FC9C4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"></path></svg>
+<span style="display: flex; flex-direction: column; line-height: 1.5"><span style="font-size: 13px; color: #9FD9D6">واتساب</span><span style="font-family: 'Alexandria', sans-serif; font-size: 19px" dir="ltr">+966 53 129 9997</span></span>
+</a>
+<a class="btn" href="mailto:info@salampools.com" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: 18px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); color: #FFFFFF; text-decoration: none">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4FC9C4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 6-10 7L2 6"></path></svg>
+<span style="display: flex; flex-direction: column; line-height: 1.5"><span style="font-size: 13px; color: #9FD9D6">البريد الإلكتروني</span><span style="font-family: 'Alexandria', sans-serif; font-size: 17px" dir="ltr">info@salampools.com</span></span>
+</a>
+</div>
+</div>
+
+<div style="flex: 1.3 1 440px; min-width: 0; background: #FFFFFF; color: #13282B; border-radius: 28px; padding: clamp(24px,4vw,44px); box-shadow: 0 40px 80px -40px rgba(0,0,0,.5)">
+<div id="form-success" hidden="">
+<div style="text-align: center; padding: 48px 8px">
+<svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#1E6F75" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m8 12 3 3 5-6"></path></svg>
+<p style="margin: 18px 0 0; font-family: 'Alexandria', sans-serif; font-size: 24px; font-weight: 600; line-height: 1.5; color: #0B2226">وصلنا طلبك، شكراً لك.</p>
+<p style="margin: 10px 0 0; font-size: 16px; line-height: 1.9; color: #5A6B6D">سيتواصل معك أحد مستشارينا خلال ساعات العمل.</p>
+</div>
+</div>
+<div id="form-body">
+<div style="display: flex; flex-direction: column; gap: 20px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px">
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14.5px; font-weight: 500; line-height: 1.6">الاسم الكامل
+<input type="text" name="name" autocomplete="name" placeholder="مثال: محمد العتيبي" style="min-height: 52px; border: 1px solid #C9D6D4; border-radius: 14px; padding: 0 16px; font-size: 16px; background: #FAFBF9; color: #13282B">
+</label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14.5px; font-weight: 500; line-height: 1.6">رقم الجوال
+<input type="tel" name="phone" autocomplete="tel" placeholder="05xxxxxxxx" dir="ltr" style="min-height: 52px; border: 1px solid #C9D6D4; border-radius: 14px; padding: 0 16px; font-size: 16px; background: #FAFBF9; color: #13282B; text-align: right">
+</label>
+</div>
+<fieldset style="border: 0; margin: 0; padding: 0">
+<legend style="font-size: 14.5px; font-weight: 500; line-height: 1.6; margin-bottom: 10px; padding: 0">الخدمة المطلوبة</legend>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<button type="button" class="pill-on svc" aria-pressed="true" style="min-height: 44px; padding: 0 18px; border-radius: 999px; font-family: inherit; font-size: 15px; line-height: 1.5">إنشاء مسبح</button>
+<button type="button" class="pill svc" aria-pressed="false" style="min-height: 44px; padding: 0 18px; border-radius: 999px; font-family: inherit; font-size: 15px; line-height: 1.5">ترميم مسبح</button>
+<button type="button" class="pill svc" aria-pressed="false" style="min-height: 44px; padding: 0 18px; border-radius: 999px; font-family: inherit; font-size: 15px; line-height: 1.5">معدات المسابح</button>
+<button type="button" class="pill svc" aria-pressed="false" style="min-height: 44px; padding: 0 18px; border-radius: 999px; font-family: inherit; font-size: 15px; line-height: 1.5">صيانة</button>
+<button type="button" class="pill svc" aria-pressed="false" style="min-height: 44px; padding: 0 18px; border-radius: 999px; font-family: inherit; font-size: 15px; line-height: 1.5">ساونا وجاكوزي</button>
+
+</div>
+</fieldset>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14.5px; font-weight: 500; line-height: 1.6">المدينة
+<select name="city" style="min-height: 52px; border: 1px solid #C9D6D4; border-radius: 14px; padding: 0 16px; font-size: 16px; background: #FAFBF9; color: #13282B">
+<option>جدة</option>
+<option>الرياض</option>
+<option>شمال الرياض</option>
+<option>مدينة أخرى (نؤكد إمكانية التنفيذ بعد المراجعة)</option>
+</select>
+</label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14.5px; font-weight: 500; line-height: 1.6">نبذة عن طلبك <span style="font-weight: 400; color: #5A6B6D; font-size: 13px">(اختياري)</span>
+<textarea name="details" rows="3" placeholder="مساحة المسبح، الموقع، أي تفاصيل تهمّك…" style="border: 1px solid #C9D6D4; border-radius: 14px; padding: 14px 16px; font-size: 16px; background: #FAFBF9; color: #13282B; resize: vertical; line-height: 1.8"></textarea>
+</label>
+<button type="button" class="btn" id="form-submit" style="min-height: 58px; border: 0; border-radius: 999px; background: #123339; color: #FFFFFF; font-family: 'Alexandria', sans-serif; font-size: 17px; font-weight: 600; cursor: pointer">أرسل طلب عرض السعر</button>
+<p style="margin: 0; font-size: 13px; line-height: 1.8; color: #5A6B6D; text-align: center">بإرسال الطلب توافق على تواصلنا معك وفق سياسة الخصوصية.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer style="background: #071A1D; color: #BFD3D1; padding-top: 72px; padding-bottom: 32px">
+<div class="wrap">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px">
+<div>
+<div style="display: flex; align-items: center; gap: 12px">
+<span style="flex: none; width: 60px; height: 60px; border-radius: 14px; background: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px -8px rgba(0,0,0,.45)"><img src="assets/logo-icon.png" alt="" width="157" height="216" style="display: block; height: 44px; width: auto"></span>
+<span style="display: flex; flex-direction: column; gap: 6px; line-height: 1.5">
+<span style="font-family: 'Alexandria', sans-serif; font-weight: 700; font-size: 16px; color: #FFFFFF">سلام المتطورة لبرك السباحة</span>
+<span lang="en" dir="ltr" style="font-family: 'Alexandria', sans-serif; font-size: 10.5px; line-height: 1.5; letter-spacing: 2.5px; color: #9FD9D6; text-align: right">SALAM POOLS &amp; SPA</span>
+</span>
+</div>
+<p style="margin: 12px 0 0; font-size: 15px; line-height: 1.9">شركة سعودية منذ 1996 متخصصة في إنشاء المسابح والعزل والأعمال الكهروميكانيكية والصيانة.</p>
+</div>
+<div>
+<p style="margin: 0 0 14px; font-size: 14px; font-weight: 600; color: #4FC9C4; line-height: 1.6">جدة</p>
+<p style="margin: 0; font-size: 14.5px; line-height: 1.9">طريق الملك سعود — 3116 حي الزمرد، جدة 23811</p>
+<p style="margin: 10px 0 0; font-size: 14.5px; line-height: 1.9">البلدية — 3194 العزيزية، جدة 23334</p>
+</div>
+<div>
+<p style="margin: 0 0 14px; font-size: 14px; font-weight: 600; color: #4FC9C4; line-height: 1.6">الرياض</p>
+<p style="margin: 0; font-size: 14.5px; line-height: 1.9">حي العارض — 3202 الأمير سعود بن جلوي، الرياض 13335</p>
+</div>
+<nav aria-label="روابط سريعة">
+<p style="margin: 0 0 14px; font-size: 14px; font-weight: 600; color: #4FC9C4; line-height: 1.6">روابط</p>
+<div style="display: flex; flex-direction: column; gap: 6px; font-size: 14.5px; line-height: 1.8">
+<a href="#services" style="color: #BFD3D1; text-decoration: none">خدماتنا</a>
+<a href="#projects" style="color: #BFD3D1; text-decoration: none">مشاريعنا</a>
+<a href="https://salampool.com" style="color: #BFD3D1; text-decoration: none">المتجر الإلكتروني</a>
+<a href="#quote" style="color: #BFD3D1; text-decoration: none">اطلب عرض سعر</a>
+</div>
+</nav>
+</div>
+<div style="margin-top: 56px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.1); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 13px; line-height: 1.8; color: #8FA7A5">
+<p style="margin: 0">© 2026 سلام المتطورة لبرك السباحة. جميع الحقوق محفوظة.</p>
+<p style="margin: 0">سياسة الخصوصية · الشروط والأحكام</p>
+</div>
+</div>
+</footer>
+
+<!-- ============ MOBILE STICKY BAR ============ -->
+<div class="mob-bar" style="position: sticky; bottom: 0; z-index: 10; gap: 8px; padding: 10px 12px; background: rgba(7,26,29,.94); backdrop-filter: blur(8px); border-top: 1px solid rgba(255,255,255,.1)">
+<a href="https://wa.me/966531299997" style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 50px; border-radius: 999px; background: #4FC9C4; color: #0B2226; font-weight: 600; text-decoration: none">واتساب</a>
+<a href="tel:920012510" style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 50px; border-radius: 999px; border: 1px solid rgba(255,255,255,.3); color: #FFFFFF; text-decoration: none">اتصل الآن</a>
+</div>
+
+</div>
+
+<script>
+(function(){
+var v=document.querySelector('.hero-video');
+if(v){v.muted=true;v.defaultPlaybackRate=.75;v.playbackRate=.75;
+if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){v.pause();}else{var p=v.play();if(p&&p.catch)p.catch(function(){});}}
+var menu=document.getElementById('mobile-menu');
+document.querySelectorAll('[data-menu]').forEach(function(el){el.addEventListener('click',function(){menu.hidden=!menu.hidden;});});
+document.querySelectorAll('.faq-q').forEach(function(btn){btn.addEventListener('click',function(){
+var open=btn.getAttribute('aria-expanded')==='true';
+document.querySelectorAll('.faq-q').forEach(function(b){b.setAttribute('aria-expanded','false');b.querySelector('.faq-icon').classList.remove('is-open');b.nextElementSibling.hidden=true;});
+if(!open){btn.setAttribute('aria-expanded','true');btn.querySelector('.faq-icon').classList.add('is-open');btn.nextElementSibling.hidden=false;}
+});});
+document.querySelectorAll('.svc').forEach(function(b){b.addEventListener('click',function(){
+document.querySelectorAll('.svc').forEach(function(x){x.className='pill svc';x.setAttribute('aria-pressed','false');});
+b.className='pill-on svc';b.setAttribute('aria-pressed','true');});});
+var sub=document.getElementById('form-submit');
+if(sub)sub.addEventListener('click',function(){document.getElementById('form-body').hidden=true;document.getElementById('form-success').hidden=false;});
+})();
+</script>
+</body>
+</html>
